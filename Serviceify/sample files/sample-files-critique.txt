@@ -1,0 +1,39 @@
+The following is the critique for sample files 1 and 2 -->
+Sample file 1:
+    1. No title
+    2. The file will not necessarily show content satisfactorily on different devices
+       (tablets, mobiles etc.)
+    3. Uneven syntax with the <h2> and <p> tags.
+    4. Usage of <i> tag instead of <em>.
+    5. No opening brackets in <p> under <h3>.
+    6. No alt attribute in the <img> tag.
+    7. Extra <ul> that makes no visual difference.
+    8. Inlcuding table in <h3> makes no visual difference.
+    9. Missing unit in table border (not an error, still a suggestion though)
+
+Sample file 2:
+    1. Uses a specific doctype declaration which may not run on all browsers. (Not an error but 
+       recommended to be careful while using CSS with it.)
+    2. Title is not descriptive.
+    3. Redundant xmlns namespace declaration
+    4. The file will not necessarily show content satisfactorily on different devices
+       (tablets, mobiles etc.) 
+
+Corrections made:
+Sample file 1:
+    1. Added Title
+    2. Added width=device-width
+    3. Corrected the placement of text in <h2> and <p> tags.
+    4. Replaced <i> with <em>
+    5. Added the missing '(' (not an error but a suggestion)
+    6. Added alt attribute.
+    7. Corrected redundant <ul> tag.
+    8. Modified <h3> due to redundancy.
+    9. Added the missing unit 'px' (not an error, still a suggestion though)
+
+Sample file 2:
+    1. Added a descriptive title
+    2. Added width=device-width
+    NOTE: The xmlns namespace was not removed but pertaining to this particular file, it is Redundant
+
+

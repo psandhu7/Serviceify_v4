@@ -1,0 +1,174 @@
+body{
+    background-color: white;
+    margin: 0;
+
+}
+
+/* -- This section applies CSS to the navbar.-- */
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: #3E78B2; */
+    background-color: #1282A2;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    position: fixed;
+    top: 0;
+}
+
+#company-logo{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding-left: 1rem;
+}
+
+
+.nav-items ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items li:hover{
+    text-decoration: underline;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+.main{
+    font-family: 'Karla', sans-serif;
+    margin-top: 85px;
+    padding: 0 20px;
+}
+
+/*--This section applies CSS to the footer.--*/
+
+#footer{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1282A2;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+.bottom-hr{
+    clear: both;
+    visibility: hidden;
+}
+
+/*--This section applies CSS to the hamburger toggle button.
+NOTE: The menu does not colapse for this section. Collapsible 
+menu is implemented in Unit - 4 using Javascript. --*/
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+/*--This section changes the applied CSS when the 
+screen width is less than 800px, for example - in 
+mobile devices.--*/
+
+@media only screen and (max-width: 800px){
+    .navbar{
+        z-index: 1;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .nav-items{
+        display: none;
+        width: 100%;
+    }
+
+    .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .nav-items li{
+        text-align: center;
+        padding-right: 15px;
+    }
+
+    .main{
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #footer{
+        position: fixed;
+        padding: 0;
+        bottom: 0;
+    }
+
+    .nav-items.active{
+        display: flex;
+    }
+
+}
+
+
+
+
+
+
+
